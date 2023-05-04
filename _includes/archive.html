@@ -11,17 +11,6 @@
             {{ post.title | escape }}
           </a>
         </div>
-        <div>
-          {% if post.author %}
-          <span class="post_author">{{post.author}}</span>
-          {% endif %}
-        </div>
-      
-        <div>
-          {% if post.info %}
-          <span class="post_info">{{post.info}}</span>
-          {% endif %}
-        </div>
         <div id="leftPic">
           <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="255" width="480">
         </div>
@@ -45,20 +34,12 @@
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% endif %}
   {% endunless %}
-
   <ul>
     <div class='archive_title'>
       <a href='{{ post.url | relative_url }}'>
         {{ post.title | escape }}
       </a>
       {% if post.author %}
-      <br>
-      <span class="post_author"  font-size=0.9rem>{{post.author}}</span>
-      {% endif %}
-      {% if post.info %}
-      <br>
-      <span class="post_info"  font-size=0.9rem>{{post.info}}</span>
-      {% endif %}
     </div>
     <div id="leftPic">
       <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="255" width="480">
