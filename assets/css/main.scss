@@ -252,7 +252,7 @@ img {
         margin-right: 1.2rem;
     }
 }
-
+/*
 .archive_date {
     text-transform: uppercase;
 
@@ -260,11 +260,11 @@ img {
         float: right;
     }
 }
-
+*/
 .archive_title {
     word-wrap: normal;
     @include breakpoint(medium) {
-        max-width: 80%;
+        max-width: 100%;
     }
 }
 
@@ -526,7 +526,7 @@ img {
         font-size: 1.5rem;
     }
 }
-
+/*
 .post_data {
     margin-top: -0.5rem;
     margin-bottom: 3.5rem;
@@ -542,7 +542,7 @@ img {
     letter-spacing: -0.5px;
     line-height: 1;
 }
-
+*/
 .post_categories {
     line-height: 1;
     margin-left: 0.3rem;
