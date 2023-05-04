@@ -263,7 +263,7 @@ img {
 */
 .archive_title {
     word-wrap: normal;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     @include breakpoint(medium) {
         max-width: 100%;
     }
@@ -354,6 +354,7 @@ img {
 .header_job {
     display: block;
     margin-top: .1rem;
+    margin-bottom: .1rem;
     color: var(--job_font);
     font-size: 0.75em;
     font-weight: 700;
