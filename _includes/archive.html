@@ -52,10 +52,12 @@
         {{ post.title | escape }}
       </a>
       {% if post.author %}
-      <p class="post_author"  font-size=0.9rem>{{post.author}}</p>
+      <br>
+      <span class="post_author"  font-size=0.9rem>{{post.author}}</span>
       {% endif %}
       {% if post.info %}
-      <p class="post_info"  font-size=0.9rem>{{post.info}}</p>
+      <br>
+      <span class="post_info"  font-size=0.9rem>{{post.info}}</span>
       {% endif %}
     </div>
     <div id="leftPic">
