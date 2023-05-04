@@ -358,6 +358,7 @@ img {
     color: var(--job_font);
     font-size: 0.75em;
     font-weight: 700;
+    
 }
 
 .theme_changer {   
@@ -418,6 +419,7 @@ img {
 
     @include mobile-only {
         display: none;
+        margin-bottom: 30pt;
     }
 }
 
