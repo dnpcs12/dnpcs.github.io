@@ -37,17 +37,16 @@
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% endif %}
   {% endunless %}
+
   <ul>
-    <li>
-      <div class='archive_title'>
-        <a href='{{ post.url | relative_url }}'>
-          {{ post.title | escape }}
-        </a>
-      </div>
-      <div id="leftPic">
-        <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="170" width="320">
-      </div>
-    </li>
+    <div class='archive_title'>
+      <a href='{{ post.url | relative_url }}'>
+        {{ post.title | escape }}
+      </a>
+    </div>
+    <div id="leftPic">
+      <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="170" width="320">
+    </div>
   </ul>
   {% endfor %}
 </div>
