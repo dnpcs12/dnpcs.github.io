@@ -8,16 +8,19 @@ layout: page
     <p class="post_title">{{ page.title }}</p>
     {% endif %}
   </div>
-  <div>
-    {% if page.info %}
-    <span class="post_info">{{page.info}}</span>
-    {% endif %}
-  </div>
+  
   <div>
     {% if page.author %}
     <span class="post_author">{{page.author}}</span>
     {% endif %}
   </div>
+
+  <div>
+    {% if page.info %}
+    <span class="post_info">{{page.info}}</span>
+    {% endif %}
+  </div>
+
   
 
   <div class="post_content">
