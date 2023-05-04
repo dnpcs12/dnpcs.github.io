@@ -20,6 +20,15 @@ layout: page
     </span>
     {% endif %}
   </div>
+  {% if page.info %}
+    <span class="post_info">{{page.info}}</span>
+    {% endif %}
+    {% if page.author %}
+    <span class="post_author">{{page.author}}</span>
+    {% endif %}
+  <div>
+
+  </div>
   <div class="post_content">
     {{ content }}
   </div>
