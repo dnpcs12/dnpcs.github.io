@@ -354,7 +354,7 @@ img {
 .header_job {
     display: block;
     margin-top: .1rem;
-    margin-bottom: .1rem;
+    margin-bottom: 20pt;
     color: var(--job_font);
     font-size: 0.75em;
     font-weight: 700;
@@ -432,6 +432,7 @@ img {
 }
 
 .nav_item {
+    margin-top: 20pt;
     display: inline-block;
     *display: inline;
     zoom: 1;
