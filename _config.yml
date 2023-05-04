@@ -2,7 +2,7 @@
 title: SooBin Lim #Your awesome title
 email: dnpcs@khu.ac.kr #youremail@domain.com
 description: > # this means to ignore newlines until "baseurl"
-SooBin Lim homepage
+- SooBin Lim homepage
 
 baseurl: # the subpath of the site
 url: https://dnpcs12.github.io/ #http://starry99.github.io/catbook # the base hostname & protocol for your site
