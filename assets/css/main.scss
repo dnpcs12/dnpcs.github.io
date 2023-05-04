@@ -522,6 +522,7 @@ img {
     font-size: 1.8rem;
     line-height: 2.2rem;
     font-weight: 700;
+    margin-bottom: 10px;
 
     @include mobile-only {
         text-align: center;
@@ -540,10 +541,9 @@ img {
 }
 
 .post_author{
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.3rem;
 }
 .post_info{
-    margin-bottom: 0.2rem;
     font-size: 0.9rem;
 }
 
