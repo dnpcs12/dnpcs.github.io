@@ -21,7 +21,7 @@ cusdis:
 
 user:
   name: SooBin Lim
-  pic: /assets/img/cat.jpg
+  pic: /assets/img/me.jpg
   picAlt: "catbook"
   job: Ph.D. Student<br>Department of Software Convergence<br>Kyung Hee University
   aboutme: true # comment this out if you don't need the 'about' page.
