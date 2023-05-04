@@ -263,9 +263,9 @@ img {
 */
 .archive_title {
     word-wrap: normal;
+    margin-bottom: 20px;
     @include breakpoint(medium) {
         max-width: 100%;
-        margin-bottom: 20px;
     }
 }
 
