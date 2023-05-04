@@ -34,12 +34,12 @@
   <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% endif %}
   {% endunless %}
+
   <ul>
     <div class='archive_title'>
       <a href='{{ post.url | relative_url }}'>
         {{ post.title | escape }}
       </a>
-      {% if post.author %}
     </div>
     <div id="leftPic">
       <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="255" width="480">
