@@ -466,6 +466,7 @@ img {
 
 .mobile_menu {
     display: none;
+    margin-top:20pt;
 
     @include mobile-only {
         display: block;
