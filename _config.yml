@@ -23,7 +23,7 @@ user:
   name: SooBin Lim
   pic: /assets/img/cat.jpg
   picAlt: "catbook"
-  job: Kyung Hee University / Software Convergence / Ph.D. Student.
+  job: Kyung Hee University <br> Software Convergence <br> Ph.D. Student.
   aboutme: true # comment this out if you don't need the 'about' page.
 
 exclude:
