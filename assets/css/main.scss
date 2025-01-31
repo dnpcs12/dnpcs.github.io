@@ -290,7 +290,7 @@ img {
   
   .archive_details {
     flex: 1; /* 텍스트 컨테이너가 남은 공간을 차지 */
-    margin-left: 20px; /* 이미지와 텍스트 사이에 추가 간격 */
+    margin-right: 20px; /* 이미지와 텍스트 사이에 추가 간격 */
   }
   
   .archive_title {
@@ -309,12 +309,23 @@ img {
     color: #0066cc;
   }
   .archive_image img {
-    max-width: 150px; /* 이미지의 최대 너비를 제한 */
+    max-width: 200px; /* 이미지의 최대 너비를 제한 */
     height: auto; /* 높이는 비율에 맞춰 조정 */
-    border-radius: 8px; /* 모서리를 둥글게 처리 */
+    border-radius: 6px; /* 모서리를 둥글게 처리 */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   }
-
+  .archive_image a {
+    display: inline-block;
+  }
+  
+  .archive_image a img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .archive_image a:hover img {
+    transform: scale(1.05); /* 커서를 올리면 이미지 약간 확대 */
+    cursor: pointer; /* 클릭 가능 마우스 커서 */
+  }
 /* 3. Header
    ========================================================================== */
 

@@ -7,7 +7,9 @@
     {% if post.url %}
     <li class="archive_item">
       <div class="archive_image">
-        <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.title }}">
+        <a href="{{ '/assets/img/' | relative_url }}{{ post.img }}" target="_blank">
+          <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.title }}">
+        </a>
       </div>
       <div class="archive_details">
         <div class="archive_title">
@@ -15,7 +17,6 @@
         </div>
       </div>
     </li>
-    
     {% endif %}
     {% endfor %}
   </ul>
