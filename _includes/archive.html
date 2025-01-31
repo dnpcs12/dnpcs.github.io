@@ -5,19 +5,20 @@
   <ul>
     {% for post in site.categories[page.type] %}
     {% if post.url %}
-    <li>
-        <div class='archive_title'>
-          <a href='{{ post.url | relative_url }}'>
+    <li class="archive_item">
+      <div class="archive_image">
+        <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.title }}" height="341" width="512">
+      </div>
+      <div class="archive_details">
+        <div class="archive_title">
+          <a href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </div>
-        <div id="leftPic">
-          <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="341" width="512">
-        </div>
-      </li>
+      </div>
+    </li>
     {% endif %}
     {% endfor %}
-
   </ul>
 </div>
 
@@ -35,15 +36,19 @@
   {% endif %}
   {% endunless %}
 
-  <ul>
-    <div class='archive_title'>
-      <a href='{{ post.url | relative_url }}'>
-        {{ post.title | escape }}
-      </a>
-    </div>
-    <div id="leftPic">
-      <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" height="255" width="480">
-    </div>
+  <ul class="archive_list">
+    <li class="archive_item">
+      <div class="archive_image">
+        <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.title }}" height="255" width="480">
+      </div>
+      <div class="archive_details">
+        <div class="archive_title">
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </div>
+      </div>
+    </li>
   </ul>
   {% endfor %}
 </div>
