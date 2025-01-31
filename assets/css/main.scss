@@ -280,7 +280,9 @@ img {
 //     margin-top: 1.4rem;
 //     margin-bottom: 0.6rem;
 // }
-
+.archive ul li {
+    margin-bottom: 1.4rem;
+}
 .archive_item {
     display: flex; /* Flexbox를 사용하여 수평 정렬 */
     align-items: flex-start; /* 상단 정렬 */
@@ -301,7 +303,7 @@ img {
   
   .archive_title a {
     text-decoration: none; /* 링크 밑줄 제거 */
-    color: #333;
+    color: var(--archive_font);;
   }
 
   .archive_meta {
