@@ -315,6 +315,7 @@ img {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
   }
   .archive_image a {
+    pointer-events: auto; /* 클릭 가능하게 설정 */
     display: inline-block;
   }
   
@@ -322,17 +323,6 @@ img {
     transition: transform 0.2s ease-in-out;
   }
   
-    .archive_image a {
-    pointer-events: auto; /* 클릭 가능하게 설정 */
-    display: inline-block; /* 기본 블록 속성 */
-    }
-
-    .archive_image img {
-    max-width: 100%; /* 이미지 크기를 컨테이너 너비에 맞춤 */
-    height: auto; /* 비율 유지 */
-    transition: transform 0.3s; /* 클릭 효과 추가 */
-    }
-
     .archive_image a:hover img {
     transform: scale(1.05); /* 마우스 오버 시 확대 */
     cursor: pointer; /* 클릭 가능 표시 */
