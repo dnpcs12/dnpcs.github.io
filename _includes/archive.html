@@ -13,7 +13,24 @@
       </div>
       <div class="archive_details">
         <div class="archive_title">
-          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </div>
+        <div class="archive_meta">
+          <p>{{ post.author }}</p>
+          <em><p>{{ post.publication }}</p></em>
+        </div>
+        <div class="archive_links">
+          {% if post.paper_link %}
+          <a href="{{ post.paper_link }}" target="_blank">Paper Link</a>
+          {% endif %}
+          {% if post.code_link %}
+          <a href="{{ post.code_link }}" target="_blank">Code Link</a>
+          {% endif %}
+          {% if post.project_link %}
+          <a href="{{ post.project_link }}" target="_blank">Project Link</a>
+          {% endif %}
         </div>
       </div>
     </li>
