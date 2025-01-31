@@ -304,10 +304,34 @@ img {
     color: #333;
   }
   
+  .archive_meta {
+    font-size: 14px; /* 텍스트 크기 */
+    color: #666; /* 회색 톤의 텍스트 */
+    margin-top: 5px; /* 제목과 약간의 간격 추가 */
+    line-height: 1.5; /* 줄 간격 */
+  }
+  
+  .archive_meta p {
+    margin: 0; /* 각 문단 간 여백 제거 */
+  }
+
   .archive_title a:hover {
     text-decoration: underline;
     color: #0066cc;
   }
+
+  .archive_links a {
+    text-decoration: none;
+    color: #0066cc;
+    margin-right: 10px; /* 링크 간 간격 추가 */
+    font-size: 14px;
+  }
+  
+  .archive_links a:hover {
+    text-decoration: underline;
+    color: #003366;
+  }
+
   .archive_image img {
     max-width: 200px; /* 이미지의 최대 너비를 제한 */
     height: auto; /* 높이는 비율에 맞춰 조정 */
