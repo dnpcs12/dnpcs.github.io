@@ -308,7 +308,12 @@ img {
     text-decoration: underline;
     color: #0066cc;
   }
-  
+  .archive_image img {
+    max-width: 150px; /* 이미지의 최대 너비를 제한 */
+    height: auto; /* 높이는 비율에 맞춰 조정 */
+    border-radius: 8px; /* 모서리를 둥글게 처리 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  }
 
 /* 3. Header
    ========================================================================== */
