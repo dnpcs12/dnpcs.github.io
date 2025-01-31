@@ -282,37 +282,32 @@ img {
 // }
 
 .archive_item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px; /* 이미지와 텍스트 사이의 간격 */
-    margin-bottom: 20px; /* 각 포스트 간 간격 */
+    display: flex; /* 수평 정렬 */
+    align-items: flex-start; /* 상단 정렬 */
+    gap: 20px; /* 이미지와 텍스트 간격 */
+    margin-bottom: 30px; /* 각 항목 간격 */
   }
   
   .archive_image img {
     max-width: 200px; /* 이미지 크기 제한 */
     height: auto; /* 비율 유지 */
-    border-radius: 8px; /* 모서리 둥글게 */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    border-radius: 8px; /* 모서리를 둥글게 처리 */
   }
   
   .archive_details {
-    flex: 1; /* 텍스트 영역 확장 */
-  }
-  
-  .archive_title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    flex: 1; /* 텍스트 영역이 남은 공간을 차지 */
   }
   
   .archive_title a {
-    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
     color: #333;
+    text-decoration: none;
   }
   
   .archive_title a:hover {
-    color: #0066cc;
     text-decoration: underline;
+    color: #0066cc;
   }
   
 
