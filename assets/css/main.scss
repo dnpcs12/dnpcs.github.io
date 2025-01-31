@@ -252,7 +252,7 @@ img {
         margin-right: 1.2rem;
     }
 }
-/*
+
 .archive_date {
     text-transform: uppercase;
 
@@ -260,14 +260,14 @@ img {
         float: right;
     }
 }
-*/
-// .archive_title {
-//     word-wrap: normal;
-//     margin-bottom: 10px;
-//     @include breakpoint(medium) {
-//         max-width: 100%;
-//     }
-// }
+
+.archive_title {
+    word-wrap: normal;
+    margin-bottom: 10px;
+    @include breakpoint(medium) {
+        max-width: 100%;
+    }
+}
 
 .archive_type {
     font-size: 2rem;
@@ -275,11 +275,11 @@ img {
     margin-bottom: 1rem;
 }
 
-// .archive_year {
-//     font-size: 1.2rem;
-//     margin-top: 1.4rem;
-//     margin-bottom: 0.6rem;
-// }
+.archive_year {
+    font-size: 1.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 0.6rem;
+}
 
 .archive_item {
     display: flex; /* Flexbox를 사용하여 수평 정렬 */
