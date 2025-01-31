@@ -354,6 +354,12 @@ img {
     cursor: pointer; /* 클릭 가능 표시 */
     }
     
+    @media (max-width: 768px) {
+        .archive_image {
+          display: none; /* 이미지 숨기기 */
+        }
+      }
+    
 /* 3. Header
    ========================================================================== */
 
@@ -520,7 +526,7 @@ img {
     }
 
     @include mobile-only {
-
+        margin-top: 20px;
         &:after {
             content: '/';
             color: var(--nav_font);
