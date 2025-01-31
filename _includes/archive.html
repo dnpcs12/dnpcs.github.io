@@ -1,10 +1,9 @@
-<!-- each category page -->
-{% if page.type %}
 <div class="archive">
+  {% if page.type %}
+  <!-- 카테고리별 페이지 -->
   <p class="archive_type">{{ page.type }}</p>
   <ul>
     {% for post in site.categories[page.type] %}
-    {% if post.url %}
     <li class="archive_item">
       <div class="archive_image">
         <a href="{{ '/assets/img/' | relative_url }}{{ post.img }}" target="_blank">
@@ -13,9 +12,7 @@
       </div>
       <div class="archive_details">
         <div class="archive_title">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </div>
         <div class="archive_meta">
           <p>{{ post.author }}</p>
@@ -34,58 +31,45 @@
         </div>
       </div>
     </li>
-    {% endif %}
     {% endfor %}
   </ul>
-</div>
-
-<!-- main page -->
-{% else %}
-<div class="archive">
-  <p class="archive_type">{{ page.type }}</p>
-  {% for post in site.posts %}
-  {% unless post.next %}
-  <p class="archive_year">{{ post.date | date: '%Y' }}</p>
   {% else %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% capture nextyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-  {% if year != nextyear %}
-  <p class="archive_year">{{ post.date | date: '%Y' }}</p>
-  {% endif %}
-  {% endunless %}
-
-  <ul class="archive_list">
-    <li class="archive_item">
-      <div class="archive_image">
-        <a href="{{ '/assets/img/' | relative_url }}{{ post.img }}" target="_blank">
-        <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.title }}" height="255" width="480">
-      </a>
-      </div>
-      <div class="archive_details">
-        <div class="archive_title">
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+  <!-- 메인 페이지: 모든 카테고리 출력 -->
+  {% for category in site.categories %}
+  <div class="category_section">
+    <p class="archive_type">{{ category[0] }}</p> <!-- 카테고리 이름 출력 -->
+    <ul class="archive_list">
+      {% for post in category[1] %}
+      <li class="archive_item">
+        <div class="archive_image">
+          <a href="{{ '/assets/img/' | relative_url }}{{ post.img }}" target="_blank">
+            <img src="{{ '/assets/img/' | relative_url }}{{ post.img }}" alt="{{ post.title }}" height="255" width="480">
           </a>
         </div>
-        <div class="archive_meta">
-          <p>{{ post.author }}</p>
-          <em><p>{{ post.publication }}</p></em>
+        <div class="archive_details">
+          <div class="archive_title">
+            <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </div>
+          <div class="archive_meta">
+            <p>{{ post.author }}</p>
+            <em><p>{{ post.publication }}</p></em>
+          </div>
+          <div class="archive_links">
+            {% if post.paper_link %}
+            <a href="{{ post.paper_link }}" target="_blank">Paper Link</a>
+            {% endif %}
+            {% if post.code_link %}
+            <a href="{{ post.code_link }}" target="_blank">Code Link</a>
+            {% endif %}
+            {% if post.project_link %}
+            <a href="{{ post.project_link }}" target="_blank">Project Link</a>
+            {% endif %}
+          </div>
         </div>
-        <div class="archive_links">
-          {% if post.paper_link %}
-          <a href="{{ post.paper_link }}" target="_blank">Paper Link</a>
-          {% endif %}
-          {% if post.code_link %}
-          <a href="{{ post.code_link }}" target="_blank">Code Link</a>
-          {% endif %}
-          {% if post.project_link %}
-          <a href="{{ post.project_link }}" target="_blank">Project Link</a>
-          {% endif %}
-        </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
   {% endfor %}
+  {% endif %}
 </div>
-{% endif %}
-
